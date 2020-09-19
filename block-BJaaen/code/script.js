@@ -34,14 +34,14 @@ function handleClick(event){
   }else if( player == "Rock"){
       if(cmpRandom == "Paper"){
         cmpScore.innerText = Number(cmpScore.innerText) + 1;
-        playerOpt.style.color = "red";
-        cmp.style.color = "green";
+        event.target.style.color = "red";
+        cmp.target.style.color = "green";
           return finalResult.innerText = "You Lose! Don't demotivate play again.";
           
          
       }else{
           scorePly.innerText = Number(scorePly.innerText) + 1;
-          playerOpt.style.color = "Green";
+          event.target.style.color = "Green";
           cmp.style.color = "red";
           return finalResult.innerText = "You Won! Congrats."
           
@@ -49,7 +49,7 @@ function handleClick(event){
   }else if(player == "Paper"){
       if(cmpRandom == "Rock"){
         scorePly.innerText = Number(scorePly.innerText) + 1;
-        playerOpt.style.color = "Green";
+       event.target.style.color = "Green";
         cmp.style.color = "red";
           return finalResult.innerText = "You Won! Congrats."
           
@@ -62,13 +62,13 @@ function handleClick(event){
   }else if( player == "Scissor"){
       if(cmpRandom == "Paper"){
         scorePly.innerText = Number(scorePly.innerText) + 1;
-        playerOpt.style.color = "Green";
-        cmp.style.color = "red";
+       event.target.style.color = "Green";
+        cmp.target.style.color = "red";
           return finalResult.innerText = "You Won! Congrats."
       }else
       cmpScore.innerText = Number(cmpScore.innerText) + 1;
       playerOpt.style.color = "red";
-      cmp.style.color = "green";
+      cmp.target.style.color = "green";
         return finalResult.innerText = "You Lose! Don't demotivate Play again."
   }
 }
