@@ -42,78 +42,66 @@ body {
 
 .container {
   text-align: center;
-  max-width: 1280px;
+  
   padding: 2rem;
   margin: 0 auto;
-  display: flex;
+  
 }
 
-.banner {
-  display: inline-block;
-  color: #424242;
-  font-size: 20px;
-  text-decoration: none;
-  text-align: center;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background: white;
-  border-radius: 4px;
-  min-width: 24px;
-  font-size: 20px;
-  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
-  border: 2px solid;
-}
-.wrapper {
-  max-width: 50%;
-  margin: 0 auto;
+.display{
+  width:432px ;
+  height: 40px;
+  background-color: black;
 }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: chocolate;
-  color: #444;
-  padding: 20px 0;
-}
-
-.wrapper:first-child {
-  margin-right: 20px;
-}
-
-.box {
-  margin: 5px;
-  background-color: #444;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 160px;
-  width: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4rem;
-  font-weight: bold;
+.display p{
   color: white;
-  cursor: pointer;
-}
-.text {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 25px;
 }
 
-.first {
-  margin-right: 20px;
-}
-
-h2 {
-  font-weight: bolder;
-  padding-bottom: 10px;
-}
-
-.heading {
+.calcBox{
+  margin: 0 auto;
+  background-color: lightgray;
   text-align: center;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  
+  
 }
+
+.box{
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  font-size: 20px;
+  margin: 5px;
+ display: grid;
+ align-items: center;
+ font-weight: 700;
+  
+}
+
+.digits{
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  grid-gap: 1fr;
+  cursor: pointer;
+  
+}
+
+.equals{
+  height: 230px;
+  background-color: red;
+  color: white;
+  grid-row-start: 2;
+  grid-row-end:7;
+  grid-column-start: 4;
+  display: grid;
+  align-items: center;
+  font-size: 30px;
+  
+}
+
