@@ -1,0 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------------------General Styling---------------------- */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+    background:url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Fredoka One', cursive;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+    
+  
+    
+}
+
+
+.intro{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+}
+.gameBox{
+
+    border-radius: 64px;
+    background: linear-gradient(145deg, #0c0c0c, #0e0e0e);
+    box-shadow:  48px 48px 96px #1f1e1e, 
+                 -48px -48px 96px #1f1e1e;
+color: white;
+text-align: center;
+width: 500px;
+height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+margin: 20px 20px 0px 20px;
+
+}
+
+.gameBox i{
+    font-size: 80px;
+   
+}
+
+.result{
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result h2{
+    
+    color:white;
+    border-radius: 14px;
+background: linear-gradient(145deg, #0e0e0e, #0c0c0c);
+box-shadow:  5px 5px 8px #3d3c3c, 
+             -5px -5px 8px #3d3c3c;
+    padding: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.selection{
+    padding-top: 20px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.score{
+    font-size: 30px;
+}
+
+.gameChanger{
+   
+    font-size: 30px;
+    background-color: white;
+    
+    color: black;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.gameResult{
+    font-size:30px ;
+}
+
+.computerOpt{
+    color:blue;
+}
+
+
+.playerOpt{
+    cursor: pointer;
+}
+
+
+
+.reset{
+    display: block;
+}
+
+@media screen and (max-width:720px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 16px 32px;
+        text-align:center;
+        
+    }
+
+    body{
+        background: none;
+        height: 100vh;
+    }
+    .gameBox i{
+        font-size: 50px;
+       
+    }
+
+    .result h2{
+        font-size: 20px;
+    }
+
+    .gameBox{
+        width: 250px;
+        height: 250px;
+        font-size: 10px;
+    }
+
+    .gameChanger{
+        
+        font-size: 18px;
+        
+        
+    }
+
+    .intro{
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        margin-top: 10px;
+    }
+
+}
