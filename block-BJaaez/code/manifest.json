@@ -1,0 +1,18 @@
+{
+    "name": "Todo Application",
+    "version": "1.0",
+    "description": "An application to note down targets and to be more productive",
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+       },
+        "icons":{
+        "16": "./assets/todo.png",
+        "32": "./assets/todo.png",
+        "48": "./assets/todo.png",
+        "128": "./assets/todo.png"
+    },
+    "browser_action": {
+      "default_icon": "./assets/todo.png"
+    },
+    "manifest_version": 2
+  }
